@@ -1,0 +1,58 @@
+@import '../../../sass/variables';
+
+.head{
+  height: 100vh;
+  background-image: linear-gradient( to left bottom,  rgba(#000,.5), rgba(#000,.5)),
+  url(https://drive.google.com/uc?id=1gholpjvdnYddbCvP74QMS8GsafDQTnWX);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+
+  &__nombre {
+    color: white;
+    font-weight: 600;
+    font-family: 'Montserrat', serif;
+    font-size: 3.5rem;
+    position: absolute;
+    left: 5rem;
+    top: 40vh;
+    width: 50%;
+
+    span {
+      font-size: 2.5rem;
+    }
+  }
+
+  &__contactos{
+    display: flex;
+    position: absolute;
+    right: 10rem;
+    top: 45vh;
+  }
+
+  &__contacto {
+    &-icon{
+      margin-left: 3rem;
+      width: 3rem;
+      height: 3rem;
+      fill: white;
+      cursor: pointer;
+      transition: all .3s;
+    }
+  }
+
+  &__button {
+    position: absolute;
+    right: 10rem;
+    top: 55vh;
+    color: #FFF;
+    background-color: rgba(0,0,0,0);
+    border: 1px solid #FFF;
+    transition: all .3s;
+
+    &:hover {
+      color: #000;
+      background-color: #FFF;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+// colors
+//#8cbc96
+//#ae805f
+//#524475
+//#ac719f
+h1 {
+  margin-top: 10rem;
+}
+.lenguajes {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 6rem;
+
+  img {
+    width: 10rem;
+  }
+}

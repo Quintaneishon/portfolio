@@ -1,0 +1,27 @@
+@import '../../../../sass/variables';
+
+.navbar{
+  position: fixed;
+  background-color:rgba($color-grey-light-2, 1);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 96%;
+  padding: 2rem 1rem;
+  font-weight: bold;
+  font-size: 1.7rem;
+
+  .item {
+    margin: 0 1rem;
+    cursor: pointer;
+    color: white;
+  }
+
+  .active {
+    color: $color-primary;
+  }
+}
+

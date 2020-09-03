@@ -1,0 +1,43 @@
+@import "../sass/variables";
+
+.container {
+  display: grid;
+  grid-template-rows: 95vh repeat(7, min-content);
+  grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] 1fr [full-end];
+}
+
+.header{
+  grid-column: full-start / full-end;
+}
+
+.about {
+  grid-column: full-start / full-end;
+  background-image: linear-gradient( to left bottom,  rgba($color-primary,.8), rgba($color-primary-dark,.8));
+}
+
+.laboral {
+  grid-column: center-start / center-end;
+}
+
+.academica {
+  grid-column: center-start / center-end;
+}
+
+.proyectos {
+  grid-column: full-start / full-end;
+  background-color: $color-secondary;
+  margin-top: 10rem;
+}
+
+.intereses {
+  grid-column: center-start / center-end;
+}
+
+.hobbies {
+  grid-column: full-start / full-end;
+}
+
+.contacto {
+  background-image: linear-gradient( to left bottom,  rgba($color-primary,.8), rgba($color-primary-dark,.8));
+  grid-column: full-start / full-end;
+}
